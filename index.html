@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Loaders</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .loaders {
+            height: 100vh;
+            min-height: 100vh;
+
+            background-color: #070707;
+            background:
+                radial-gradient(circle farthest-side at 0% 50%,#070707 23.5%,rgba(5,5,5,0) 0)21px 30px,
+                radial-gradient(circle farthest-side at 0% 50%,#000 24%,rgba(5,5,5,0) 0)19px 30px,
+                linear-gradient(#070707 14%,rgba(5,5,5,0) 0, rgba(5,5,5,0) 85%,#070707 0)0 0,
+                linear-gradient(150deg,#070707 24%,#000 0,#000 26%,rgba(5,5,5,0) 0,rgba(5,5,5,0) 74%,#000 0,#000 76%,#070707 0)0 0,
+                linear-gradient(30deg,#070707 24%,#000 0,#000 26%,rgba(5,5,5,0) 0,rgba(5,5,5,0) 74%,#000 0,#000 76%,#070707 0)0 0,
+                linear-gradient(90deg,#000 2%,#070707 0,#070707 98%,#000 0%)0 0 #070707;
+            background-size: 40px 60px;
+            display: grid;
+            grid-template-columns: repeat(5, 200px);
+            grid-auto-flow: row;
+            grid-gap: 20px;
+            justify-content: center;
+            align-content: center;
+            align-content: center;
+        }
+
+        .loaders__loader {
+            position: relative;
+
+            min-width: 200px;
+            min-height: 200px;
+
+            background-color: rgba(255, 255, 255, 0.015);
+            box-shadow: inset 0px 0px 100px 0px rgba(255, 255, 255, 0.05);
+            border: 1px solid;
+            border-top-color: rgba(255, 255, 255, 0.1);
+            border-left-color: rgba(255, 255, 255, 0.1);
+            border-bottom-color: rgba(255, 255, 255, 0.08);
+            border-right-color: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(2px);
+            list-style-type: none;
+
+            overflow: hidden;
+
+            transition: all 0.65s ease-in 0.1s;
+            will-change: backdrop-filter, box-shadow, transform, background;
+        }
+
+        .loaders__loader:hover {
+            transform: scale(1.1);
+
+            box-shadow: inset 0px 0px 250px 0px rgba(255, 255, 255, 0.065);
+            border-top-color: rgba(255, 255, 255, 0.15);
+            border-left-color: rgba(255, 255, 255, 0.15);
+            border-bottom-color: rgba(255, 255, 255, 0.11);
+            border-right-color: rgba(255, 255, 255, 0.11);
+            backdrop-filter: blur(4px);
+
+            transition: all 0.25s ease-in;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="loader1.css">
+    <link rel="stylesheet" href="loader2.css">
+
+</head>
+<body>
+
+    <ul class="loaders">
+
+        <li class="loaders__loader">
+            <div class="loader1"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader2">
+                <div class="loader2__inner"></div>
+            </div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader3"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader4"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader5"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader6"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader7"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader8"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader9"></div>
+        </li>
+
+        <li class="loaders__loader">
+            <div class="loader10"></div>
+        </li>
+
+    </ul>
+
+</body>
+</html>
