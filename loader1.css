@@ -2,7 +2,6 @@
 .loader1 {
     font-size: 7px;
 
-    z-index: 4;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +17,6 @@
     filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.85));
 
     transition: opacity 0.3s ease-out 0s,
-        top 0.3s ease-out 0s,
         visibility 0s linear 0.3s;
     will-change: transform;
 }
@@ -28,8 +26,7 @@
     -moz-animation: loader1__loading 4s linear infinite forwards;
     -o-animation: loader1__loading 4s linear infinite forwards;
     animation: loader1__loading 4s linear infinite forwards;
-    transition: opacity 0.3s ease-out 0s,
-        top 0.3s ease-out 0s;
+    transition: opacity 0.3s ease-out 0s;
 }
 
 @-webkit-keyframes loader1__loading {

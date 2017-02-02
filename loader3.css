@@ -1,0 +1,272 @@
+
+.loader3 {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    width: 60px;
+    height: 60px;
+
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.85));
+    transition: opacity 0.3s ease-out 0s,
+        visibility 0s linear 0.3s;
+    will-change: transform, background;
+}
+
+.loader3:after,
+.loader3:before,
+.loader3__inner:after,
+.loader3__inner:before {
+    content: "";
+
+    position: absolute;
+    transform: translate(0, 0);
+
+    width: 50%;
+    height: 50%;
+}
+
+.loader3:hover:after,
+.loader3:hover:before,
+.loader3:hover .loader3__inner:after,
+.loader3:hover .loader3__inner:before {
+    transition: opacity 0.3s ease-out 0s;
+}
+
+.loader3:after {
+    top: 0px;
+    left: 0px;
+
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.loader3:before {
+    top: 0;
+    left: 50%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loader3__inner:after {
+    top: 50%;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loader3__inner:before {
+    top: 50%;
+    left: 50%;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.loaders__loader:hover .loader3:after {
+    -webkit-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
+    -moz-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
+    -o-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
+    animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
+}
+
+.loaders__loader:hover .loader3:before {
+    -webkit-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
+    -moz-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
+    -o-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
+    animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
+}
+
+.loaders__loader:hover .loader3__inner:before {
+    -webkit-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
+    -moz-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
+    -o-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
+    animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
+}
+
+.loaders__loader:hover .loader3__inner:after {
+    -webkit-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
+    -moz-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
+    -o-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
+    animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
+}
+
+@-webkit-keyframes loader3__loading1 {
+    20% {
+        transform: translate(-3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes loader3__loading2 {
+    20% {
+        transform: translate(3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes loader3__loading3 {
+    20% {
+        transform: translate(3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes loader3__loading4 {
+    20% {
+        transform: translate(-3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@-moz-keyframes loader3__loading1 {
+    20% {
+        transform: translate(-3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes loader3__loading2 {
+    20% {
+        transform: translate(3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes loader3__loading3 {
+    20% {
+        transform: translate(3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes loader3__loading4 {
+    20% {
+        transform: translate(-3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@-o-keyframes loader3__loading1 {
+    20% {
+        transform: translate(-3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes loader3__loading2 {
+    20% {
+        transform: translate(3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes loader3__loading3 {
+    20% {
+        transform: translate(3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@-o-keyframes loader3__loading4 {
+    20% {
+        transform: translate(-3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes loader3__loading1 {
+    20% {
+        transform: translate(-3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes loader3__loading2 {
+    20% {
+        transform: translate(3px, -3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes loader3__loading3 {
+    20% {
+        transform: translate(3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes loader3__loading4 {
+    20% {
+        transform: translate(-3px, 3px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+    80% {
+        transform: translate(0, 0);
+    }
+}
+
