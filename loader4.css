@@ -1,0 +1,120 @@
+
+.loader4 {
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    width: 60px;
+    height: 60px;
+
+    filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.85));
+    transition: opacity 0.3s ease-out 0s,
+        visibility 0s linear 0.3s;
+    will-change: transform, background;
+}
+
+.loader4:after,
+.loader4:before,
+.loader4__inner:after,
+.loader4__inner:before {
+    content: "";
+
+    position: absolute;
+
+    width: 50%;
+    height: 50%;
+}
+
+.loader4:hover:after,
+.loader4:hover:before,
+.loader4:hover .loader4__inner:after,
+.loader4:hover .loader4__inner:before {
+    transition: opacity 0.3s ease-out 0s;
+}
+
+.loader4:after {
+    top: 0px;
+    left: 0px;
+
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+
+.loader4:before {
+    top: 0;
+    left: 50%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loader4__inner:after {
+    top: 50%;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loader4__inner:before {
+    top: 50%;
+    left: 50%;
+
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.loaders__loader:hover .loader4:after {
+    -webkit-animation: loader4__loading 1s ease infinite forwards;
+    -moz-animation: loader4__loading 1s ease infinite forwards;
+    -o-animation: loader4__loading 1s ease infinite forwards;
+    animation: loader4__loading 1s ease infinite forwards;
+}
+
+.loaders__loader:hover .loader4:before {
+    -webkit-animation: loader4__loading 1s ease 0.25s infinite forwards;
+    -moz-animation: loader4__loading 1s ease 0.25s infinite forwards;
+    -o-animation: loader4__loading 1s ease 0.25s infinite forwards;
+    animation: loader4__loading 1s ease 0.25s infinite forwards;
+}
+
+.loaders__loader:hover .loader4__inner:before {
+    -webkit-animation: loader4__loading 1s ease 0.5s infinite forwards;
+    -moz-animation: loader4__loading 1s ease 0.5s infinite forwards;
+    -o-animation: loader4__loading 1s ease 0.5s infinite forwards;
+    animation: loader4__loading 1s ease 0.5s infinite forwards;
+}
+
+.loaders__loader:hover .loader4__inner:after {
+    -webkit-animation: loader4__loading 1s ease 0.75s infinite forwards;
+    -moz-animation: loader4__loading 1s ease 0.75s infinite forwards;
+    -o-animation: loader4__loading 1s ease 0.75s infinite forwards;
+    animation: loader4__loading 1s ease 0.75s infinite forwards;
+}
+
+@-webkit-keyframes loader4__loading {
+    25% {
+        transform: translate(-2px, -0px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+@-o-keyframes loader4__loading {
+    25% {
+        transform: translate(-2px, -0px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+}
+@-moz-keyframes loader4__loading {
+    25% {
+        transform: translate(-2px, -0px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+}
+@keyframes loader4__loading {
+    25% {
+        transform: translate(-2px, -0px);
+
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+}

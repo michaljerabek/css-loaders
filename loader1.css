@@ -7,6 +7,9 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
 
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
     width: 10em;
     height: 10em;
 

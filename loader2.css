@@ -1,120 +1,197 @@
 
 .loader2 {
-    z-index: 4;
+    font-size: 7px;
+
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(0deg);
 
-    width: 60px;
-    height: 60px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 10em;
+    height: 10em;
 
+    border: 1em solid rgba(255, 255, 255, 0.35);
+    border-top: 1em solid rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    opacity: 1;
     filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.85));
+
     transition: opacity 0.3s ease-out 0s,
         visibility 0s linear 0.3s;
-    will-change: transform, background;
+    will-change: transform;
 }
 
-.loader2:after,
-.loader2:before,
-.loader2__inner:after,
-.loader2__inner:before {
-    content: "";
-
-    position: absolute;
-
-    width: 50%;
-    height: 50%;
-}
-
-.loader2:hover:after,
-.loader2:hover:before,
-.loader2:hover .loader2__inner:after,
-.loader2:hover .loader2__inner:before {
+.loaders__loader:hover .loader2 {
+    -webkit-animation: loader2__loading 4s linear infinite forwards;
+    -moz-animation: loader2__loading 4s linear infinite forwards;
+    -o-animation: loader2__loading 4s linear infinite forwards;
+    animation: loader2__loading 4s linear infinite forwards;
     transition: opacity 0.3s ease-out 0s;
 }
 
-.loader2:after {
-    top: 0px;
-    left: 0px;
-
-    background-color: rgba(255, 255, 255, 0.35);
-}
-
-
-.loader2:before {
-    top: 0;
-    left: 50%;
-
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.loader2__inner:after {
-    top: 50%;
-    left: 0;
-
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.loader2__inner:before {
-    top: 50%;
-    left: 50%;
-
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-.loaders__loader:hover .loader2:after {
-    -webkit-animation: loader2__loading 1s ease infinite forwards;
-    -moz-animation: loader2__loading 1s ease infinite forwards;
-    -o-animation: loader2__loading 1s ease infinite forwards;
-    animation: loader2__loading 1s ease infinite forwards;
-}
-
-.loaders__loader:hover .loader2:before {
-    -webkit-animation: loader2__loading 1s ease 0.25s infinite forwards;
-    -moz-animation: loader2__loading 1s ease 0.25s infinite forwards;
-    -o-animation: loader2__loading 1s ease 0.25s infinite forwards;
-    animation: loader2__loading 1s ease 0.25s infinite forwards;
-}
-
-.loaders__loader:hover .loader2__inner:before {
-    -webkit-animation: loader2__loading 1s ease 0.5s infinite forwards;
-    -moz-animation: loader2__loading 1s ease 0.5s infinite forwards;
-    -o-animation: loader2__loading 1s ease 0.5s infinite forwards;
-    animation: loader2__loading 1s ease 0.5s infinite forwards;
-}
-
-.loaders__loader:hover .loader2__inner:after {
-    -webkit-animation: loader2__loading 1s ease 0.75s infinite forwards;
-    -moz-animation: loader2__loading 1s ease 0.75s infinite forwards;
-    -o-animation: loader2__loading 1s ease 0.75s infinite forwards;
-    animation: loader2__loading 1s ease 0.75s infinite forwards;
-}
 
 @-webkit-keyframes loader2__loading {
-    25% {
-        transform: translate(-2px, -0px);
+    0% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
 
-        background-color: rgba(255, 255, 255, 0.85);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
-@-o-keyframes loader2__loading {
+    12.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
     25% {
-        transform: translate(-2px, -0px);
-
-        background-color: rgba(255, 255, 255, 0.85);
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    37.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    50% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    62.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    75% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    87.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+
 @-moz-keyframes loader2__loading {
-    25% {
-        transform: translate(-2px, -0px);
+    0% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
 
-        background-color: rgba(255, 255, 255, 0.85);
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    12.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    25% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    37.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    50% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    62.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    75% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    87.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-@keyframes loader2__loading {
-    25% {
-        transform: translate(-2px, -0px);
 
-        background-color: rgba(255, 255, 255, 0.85);
+
+@-o-keyframes loader2__loading {
+    0% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    12.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    25% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    37.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    50% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    62.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    75% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    87.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes loader2__loading {
+    0% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    12.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    25% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    37.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    50% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-top: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    62.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-right: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    75% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-bottom: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    87.5% {
+        border: 1em solid rgba(255, 255, 255, 0.35);
+        border-left: 1em solid rgba(255, 255, 255, 0.85);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
