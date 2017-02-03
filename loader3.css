@@ -63,28 +63,28 @@
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.loaders__loader:hover .loader3:after {
+.loader3:after {
     -webkit-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
     -moz-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
     -o-animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
     animation: loader3__loading1 1.25s ease-out 0s infinite forwards;
 }
 
-.loaders__loader:hover .loader3:before {
+.loader3:before {
     -webkit-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
     -moz-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
     -o-animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
     animation: loader3__loading2 1.25s ease-out 0.25s infinite forwards;
 }
 
-.loaders__loader:hover .loader3__inner:before {
+.loader3__inner:before {
     -webkit-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
     -moz-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
     -o-animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
     animation: loader3__loading3 1.25s ease-out 0.5s infinite forwards;
 }
 
-.loaders__loader:hover .loader3__inner:after {
+.loader3__inner:after {
     -webkit-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
     -moz-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;
     -o-animation: loader3__loading4 1.25s ease-out 0.75s infinite forwards;

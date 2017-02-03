@@ -63,28 +63,28 @@
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.loaders__loader:hover .loader4:after {
+.loader4:after {
     -webkit-animation: loader4__loading 1s ease infinite forwards;
     -moz-animation: loader4__loading 1s ease infinite forwards;
     -o-animation: loader4__loading 1s ease infinite forwards;
     animation: loader4__loading 1s ease infinite forwards;
 }
 
-.loaders__loader:hover .loader4:before {
+.loader4:before {
     -webkit-animation: loader4__loading 1s ease 0.25s infinite forwards;
     -moz-animation: loader4__loading 1s ease 0.25s infinite forwards;
     -o-animation: loader4__loading 1s ease 0.25s infinite forwards;
     animation: loader4__loading 1s ease 0.25s infinite forwards;
 }
 
-.loaders__loader:hover .loader4__inner:before {
+.loader4__inner:before {
     -webkit-animation: loader4__loading 1s ease 0.5s infinite forwards;
     -moz-animation: loader4__loading 1s ease 0.5s infinite forwards;
     -o-animation: loader4__loading 1s ease 0.5s infinite forwards;
     animation: loader4__loading 1s ease 0.5s infinite forwards;
 }
 
-.loaders__loader:hover .loader4__inner:after {
+.loader4__inner:after {
     -webkit-animation: loader4__loading 1s ease 0.75s infinite forwards;
     -moz-animation: loader4__loading 1s ease 0.75s infinite forwards;
     -o-animation: loader4__loading 1s ease 0.75s infinite forwards;
